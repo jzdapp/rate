@@ -5,6 +5,19 @@
 		<meta name="viewport"
 			content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
 		<link rel="stylesheet" href="css/style.css">
+		<script>
+			window.onload = function() {
+				const urlParams = new URLSearchParams(window.location.search);
+				const inapp = urlParams.get('inapp');
+
+				if (inapp === '1') {
+					const titleElement = document.getElementById('activity-name');
+					if (titleElement) {
+						titleElement.style.display = 'none';
+					}
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<div class="max-w-4xl px-4 sm:px-4 py-3 mx-auto rounded-lg cursor-pointer sm:hover:bg-block group"
@@ -15,6 +28,7 @@
 				</h1>
 				<div class="rich_media_content js_underline_content autoTypeSetting24psection fix_apple_default_style"
 					id="js_content" style="">
+					<h3>更新日期：2025年5月20日</h3>
 					<h3 data-style="margin-top: 7px; margin-bottom: 7px; text-align: left; font-family: 宋体; font-weight: bold; font-size: 18px;  white-space: normal;"
 						class="js_darkmode__0"
 						style="margin-top: 7px;margin-bottom: 7px;outline: 0px;font-weight: bold;font-size: 18px;letter-spacing: 0.544px;white-space: normal;text-align: left;font-family: 宋体;caret-visibility: visible;">
@@ -23,7 +37,7 @@
 					<p data-style="font-family: Calibri; font-size: 14px;  white-space: normal;" class="js_darkmode__1"
 						style="margin-bottom: 0px;outline: 0px;letter-spacing: 0.544px;white-space: normal;font-family: Calibri;font-size: 14px;caret-visibility: visible;text-align: left;">
 						<span
-							style="outline: 0px;font-family: 宋体;visibility: visible;font-size: 15px;">北京冀峰科技小店（以下简称"我们"）作为本应用的服务提供者，我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维护您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的汇率换算器服务息息相关，我们也希望您能够仔细阅读，并在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述向您解释，并提供了进一步说明的链接，以便您的理解。</span>
+							style="outline: 0px;font-family: 宋体;visibility: visible;font-size: 15px;">新乡市红旗区极值点⽹络技术有限公司（以下简称"我们"）作为本应用的服务提供者，我们深知个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我们致力于维护您对我们的信任，恪守以下原则，保护您的个人信息：权责一致原则、目的明确原则、选择同意原则、最少够用原则、确保安全原则、主体参与原则、公开透明原则等。同时，我们承诺，我们将按业界成熟的安全标准，采取相应的安全保护措施来保护您的个人信息。您在使用我们的服务时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在使用我们的服务时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所使用的汇率换算器服务息息相关，我们也希望您能够仔细阅读，并在需要时，按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述向您解释，并提供了进一步说明的链接，以便您的理解。</span>
 					</p>
 					<p data-style="font-family: Calibri; font-size: 14px;  white-space: normal;" class="js_darkmode__2"
 						style="margin-bottom: 0px;outline: 0px;letter-spacing: 0.544px;white-space: normal;font-family: Calibri;font-size: 14px;caret-visibility: visible;text-align: left;">
@@ -132,7 +146,7 @@
 								style="color: #1890ff;text-decoration:underline">点击查看第三方隐私政策</a></li>
 					</ul>
 
-					<ul class="ul1" style="padding-bottom: 0.6667rem;">
+					<!-- <ul class="ul1" style="padding-bottom: 0.6667rem;">
 						<li><b>第三方SDK名称:</b>Google 移动广告 (GMA) SDK</li>
 						<li><b>第三方名称:</b>Google</li>
 						<li><b>使用目的:</b>广告投放及广告反作弊。</li>
@@ -194,7 +208,7 @@
 						<li>性能数据：必选信息：崩溃数据、性能数据。</li>
 						<li><b>隐私政策:</b><a href="https://union.baidu.com/bqt/#/legal/policies"
 								style="color: #1890ff;text-decoration:underline">点击查看第三方隐私政策</a></li>
-					</ul>
+					</ul> -->
 
 					<ul class="ul1" style="padding-bottom: 0.6667rem;">
 						<li><b>第三方SDK名称:</b>移动用户反馈SDK</li>
@@ -400,7 +414,7 @@
 					<p
 						style="font-stretch: normal; font-size: 13px; font-family: &quot;Helvetica Neue&quot;; margin-bottom: 0px;">
 						<span style="font-size: 15px;"><span
-								style="font-size: 15px;font-family: &quot;PingFang SC&quot;;letter-spacing: 0.034em;">汇率换算器由北京冀峰科技小店提供，如果你对个人信息保护问题有投诉、建议、疑问，你可以选择通过以下方式联系我们：</span></span><br>
+								style="font-size: 15px;font-family: &quot;PingFang SC&quot;;letter-spacing: 0.034em;">汇率换算器由新乡市红旗区极值点⽹络技术有限公司提供，如果你对个人信息保护问题有投诉、建议、疑问，你可以选择通过以下方式联系我们：</span></span><br>
 					</p>
 					<ul class="list-paddingleft-1" style="list-style-type: none;">
 						<li style="font-size: 15px;font-family: &quot;PingFang SC&quot;;letter-spacing: 0.034em;">

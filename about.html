@@ -77,12 +77,23 @@
 			</section>
 			<div class="links">
 				<a href="termservice.html" target="_blank">用户协议</a>
-				<a href="privacypolicy.html" target="_blank">隐私政策</a>
+				<a id="privacy-policy-link" href="privacypolicy.html" target="_blank">隐私政策</a>
 			</div>
 		</div>
 		<div class="footer">
 			备案号：<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2023031955号-1A</a>
 		</div>
+
+		<script>
+			// 获取 URL 中的查询参数
+			const urlParams = new URLSearchParams(window.location.search);
+			const type = urlParams.get('type');
+
+			// 如果 type=1，修改隐私政策链接
+			if (type === '1') {
+				document.getElementById('privacy-policy-link').href = 'privacypolicyxx.html';
+			}
+		</script>
 	</body>
 
 </html>
