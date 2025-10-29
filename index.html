@@ -63,26 +63,32 @@
 				font-size:16px; 
 			}
 			@media (min-width: 768px) { .subtitle { font-size:18px; } }
-			.badges { 
+			.badges {
 				display:flex; 
-				gap:24px; 
-				flex-wrap:wrap; 
+				gap:16px; 
+				flex-wrap:nowrap; 
 				margin-bottom:24px; 
 				justify-content:center;
+				align-items:center;
+				overflow-x:auto;
+				padding:0 10px;
 			}
 			.badges .btn { 
 				margin:0 !important; 
 				flex-shrink:0;
 			}
 			.btn { 
-				display:inline-flex; 
-				align-items:center; 
+				display:flex; 
+				align-items:center;
+				justify-content:center;
 				gap:8px; 
-				padding:14px 24px; 
+				padding:12px 20px; 
 				border-radius:14px; 
 				font-weight:600; 
 				transition:all .2s ease; 
-				font-size:15px;
+				font-size:14px;
+				min-width:100px;
+				flex-shrink:0;
 				position:relative;
 				overflow:hidden;
 			}
@@ -106,6 +112,17 @@
 				box-shadow:0 8px 20px rgba(0,0,0,.1);
 			}
 			.qr-section { text-align:center; margin-top:8px; }
+			/* 小屏幕设备优化 */
+			@media (max-width: 375px) {
+				.badges {
+					gap:12px;
+				}
+				.btn {
+					padding:10px 16px !important;
+					font-size:13px !important;
+					min-width:90px !important;
+				}
+			}
 			.qr { 
 				display:inline-block; 
 				background:var(--card); 
